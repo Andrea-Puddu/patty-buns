@@ -1,0 +1,86 @@
+// COLORS
+$color-primary: #9fc088;
+$color-primary-light: #b2cda0;
+$color-primary-dark: #7f9a6d;
+
+$color-primary-tint: #ecf2e7; // for backgrounds
+$color-primary-shade: #303a29;
+
+$color-secondary-light: #ffeead;
+$color-secondary-dark: #ccbe8a;
+
+$color-grey-light-1: #f7f7f7; // for texts on black background
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #666; // main for all texts on white and tint background
+$color-grey-dark-2: #888;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT VARIABLES
+$font-primary: "Open Sans", sans-serif;
+$default-font-size: 1.6rem;
+
+// BORDER RADIUS
+$border-main: 4px;
+
+// BORDERS
+$border-container: 2px solid $color-primary-tint;
+
+// Font Sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 (h2)/ 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// Spacing System (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+// SASS VARIABLES - BREAKPOINTS
+$bp-maxi: 122.5em; // 1800px
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 58.75em; //940px
+$bp-small: 45em; //720px
+$bp-smallest: 35em; //560px
+$bp-mini: 21.875em; //350px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 43.75%; // 1rem = 7px
+  }
+
+  @media only screen and (min-width: $bp-maxi) {
+    font-size: 75%; // 1rem = 12px
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.8;
+  color: $color-grey-dark-1;
+  overflow-x: hidden;
+  position: relative;
+}

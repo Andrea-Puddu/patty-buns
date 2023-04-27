@@ -1,0 +1,22 @@
+.section-about {
+  padding: 9.6rem 0 12rem;
+  background-color: $color-primary-tint;
+  backface-visibility: hidden;
+
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 9.6rem 0 9.6rem;
+  }
+}
+
+.about {
+  animation: 2s ease-out 0.5s moveInCenter;
+
+  &__text {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content='Patty Buns is a fictional restaurant website, built by Andrea "DDU" Puddu with the goal of applying his first knowledge of html and Css'
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script defer src="js/script.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Patty Buns &mdash; Burger Restaurant</title>
+  </head>
+  <body>
+    <section
+      class="section-hero"
+      role="img"
+      area-label="Photo of the Patty Buns restaurant with tables and clients"
+    >
+      <!-- HEADER I had to put the header inside the section-hero becuase the sticky navigation was not working on mobile devices due to position: absolute-->
+      <header class="header">
+        <!-- Logo -->
+        <a href="#" class="header__logo">
+          <img src="img/logo-white.png" alt="Patty buns white logo" />
+        </a>
+        <!-- Navigation -->
+        <div class="navigation">
+          <!-- LINKS -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#menu" class="navigation__link">Menu</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#gallery" class="navigation__link">Gallery</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#testimonials" class="navigation__link"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#map" class="navigation__link">Map</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contact</a>
+              </li>
+              <li class="navigation__item">
+                <a href="tel:+44 20 7946 0513" class="btn-nav btn-nav--full"
+                  >Book a table</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="https://wolt.com/en" class="btn-nav btn-nav--outline"
+                  >Delivery</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- MOBILE NAVIGATION -->
+          <button class="btn-mobile-nav">
+            <ion-icon
+              class="btn-mobile-nav__icon"
+              name="menu-outline"
+            ></ion-icon>
+            <ion-icon
+              class="btn-mobile-nav__icon"
+              name="close-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </header>
+      <!-- HERO -->
+      <div class="hero center-content">
+        <h1 class="heading-1 mb-lg">The best vegetarian burgers in town</h1>
+        <p class="hero__text">
+          Our restaurant is located in the heart of Shoreditch (London) and is
+          specialized in vegetarian burgers all prepared with organic
+          ingredients.
+        </p>
+        <a href="tel:+44 20 7946 0513" class="btn btn--full mr-lg"
+          >Book a table</a
+        >
+        <a href="https://wolt.com/en" class="btn btn--outline">Delivery</a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="section-about" id="about">
+      <div class="about container">
+        <h3 class="heading-3 mb-t">About</h3>
+        <h2 class="heading-2 mb-lg-2">Patty Buns</h2>
+        <p class="about__text">
+          Patty Pans opened in March 2021 following the brilliant idea of two
+          young restaurateurs (Brian and Jessy) to bring the first completely
+          vegetarian burger restaurant to the city. The project was an instant
+          triumph and we are now considered the best vegetarian burger
+          restaurant in Europe. The position in the colorful and youthful
+          district of London (Shoreditch) certainly contributed to this amazing
+          success. And it's not all! Besides veggie burgers we also serve
+          organic local beer.
+        </p>
+      </div>
+    </section>
+    <!-- MENU -->
+    <section class="section-menu" id="menu">
+      <div class="container">
+        <h3 class="heading-3 mb-t">Menu</h3>
+        <h2 class="heading-2 mb-lg-2">Six Burgers and Six Beers</h2>
+      </div>
+      <div class="menu container mb-lg-2">
+        <!-- BURGERS MENU BOX -->
+        <div class="menu__box">
+          <header class="menu__header">
+            <h4 class="menu__title">Burgers</h4>
+            <p class="menu__text">All of our burgers are served with fries</p>
+          </header>
+          <!-- The list of burgers starts here -->
+          <ul class="menu__list">
+            <li class="menu__item">
+              <span class="menu__item-name">Classic</span>
+              <span class="menu__item-details"
+                >Red beans patty, onions, tomatoes, lettuce, mustard</span
+              >
+              <span class="menu__item-price">&pound; 7.50</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Blue Cheese</span>
+              <span class="menu__item-details"
+                >Mushrooms patty, onions, tomatoes, rocket, blue cheese</span
+              >
+              <span class="menu__item-price">&pound; 8.50</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">London Tower</span>
+              <span class="menu__item-details"
+                >Chickpeas patty, tomatoes, lettuce, guacamole</span
+              >
+              <span class="menu__item-price">&pound; 9.00</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Spicy Tofu</span>
+              <span class="menu__item-details"
+                >Tofu patty, caramelized onions, tomatoes, lettuce, red curry
+                sauce
+              </span>
+              <span class="menu__item-price">&pound; 9.50</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">BBQ Patty</span>
+              <span class="menu__item-details"
+                >Black beans patty, onions, tomatoes, lettuce, mushrooms, smoky
+                cheese, home-made BBQ sauce</span
+              >
+              <span class="menu__item-price">&pound; 10.00</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Crispy Magic</span>
+              <span class="menu__item-details"
+                >Fried onions patty, tomatoes, rocket, cheddar cheese</span
+              >
+              <span class="menu__item-price">&pound; 12.50</span>
+            </li>
+          </ul>
+        </div>
+        <!-- BEERS MENU BOX -->
+        <div class="menu__box">
+          <header class="menu__header">
+            <h4 class="menu__title">Beers</h4>
+            <p class="menu__text">All our beers are served on tap</p>
+          </header>
+          <!-- The list of beers starts here -->
+          <ul class="menu__list">
+            <li class="menu__item">
+              <span class="menu__item-name">River Water</span>
+              <span class="menu__item-details">Light Ale, ABV 4.2%</span>
+              <span class="menu__item-price">&pound; 4.50 / &pound; 5.50 </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Nice Day</span>
+              <span class="menu__item-details">Pale Ale, ABV 5.4%</span>
+              <span class="menu__item-price">&pound; 5.50 / &pound; 6.50</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Warrior</span>
+              <span class="menu__item-details">IPA, ABV 6.2%</span>
+              <span class="menu__item-price">&pound; 6.00 / &pound; 7.00</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Tango Brown</span>
+              <span class="menu__item-details">NEIPA, ABV 7.8%</span>
+              <span class="menu__item-price">&pound; 6.50 / &pound; 7.50</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Mud Springs</span>
+              <span class="menu__item-details">Milk Stout, ABV 8.2% </span>
+              <span class="menu__item-price">&pound; 7.00 / &pound; 8.00</span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-name">Bad Kitty</span>
+              <span class="menu__item-details">TIPA, ABV 9.8%</span>
+              <span class="menu__item-price">&pound; 7.50 / &pound; 8.50</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MENU CTA -->
+      <div class="container center-text mb-hg">
+        <a href="tel:+44 20 7946 0513" class="btn btn--full mr-lg"
+          >Book a table</a
+        >
+        <a href="https://wolt.com/en" class="btn btn--outline-2">Delivery</a>
+      </div>
+      <!-- MENU FEATURES -->
+      <div class="features container center-text">
+        <div class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="img/sprite.svg#icon-leaf"></use>
+          </svg>
+          <p class="feature__title">Local and organic</p>
+          <p class="feature__text">
+            Our cooks only use local, fresh, and organic products
+          </p>
+        </div>
+        <div class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="img/sprite.svg#icon-beer"></use>
+          </svg>
+          <p class="feature__title">Domestic beer</p>
+          <p class="feature__text">
+            All our beers are organic and brewed in UK
+          </p>
+        </div>
+        <div class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="img/sprite.svg#icon-users"></use>
+          </svg>
+          <p class="feature__title">Reservations</p>
+          <p class="feature__text">
+            We take reservations for tables up to 8 people
+          </p>
+        </div>
+        <div class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="img/sprite.svg#icon-delivery_dining"></use>
+          </svg>
+          <p class="feature__title">Delivery</p>
+          <p class="feature__text">
+            We offer delivery service within a radius of 4 km
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="section-gallery" id="gallery">
+      <div class="container center-text">
+        <h3 class="heading-3 mb-t">Gallery</h3>
+        <h2 class="heading-2 mb-hg">Our clients shot amazing pictures</h2>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img
+            srcset="
+              img/gallery/gallery-1-800w.jpg   800w,
+              img/gallery/gallery-1-2000w.jpg 2000w
+            "
+            sizes="(max-width: 75em) 66vw, 2000px"
+            src="img/gallery/gallery-1-2000w.jpg"
+            alt="Gallery image 1"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img
+            srcset="
+              img/gallery/gallery-2-550w.jpg   550w,
+              img/gallery/gallery-2-1050w.jpg 1050w
+            "
+            sizes="(max-width: 96em) 35vw, 1050px"
+            src="img/gallery/gallery-2-1050w.jpg"
+            alt="Gallery image 2"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img
+            srcset="
+              img/gallery/gallery-3-550w.jpg   550w,
+              img/gallery/gallery-3-1050w.jpg 1050w
+            "
+            sizes="(max-width: 96em) 35vw, 1050px"
+            src="img/gallery/gallery-3-1050w.jpg"
+            alt="Gallery image 3"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            srcset="
+              img/gallery/gallery-4-550w.jpg   550w,
+              img/gallery/gallery-4-1050w.jpg 1050w
+            "
+            sizes="(max-width: 96em) 35vw, 1050px"
+            src="img/gallery/gallery-4-1050w.jpg"
+            alt="Gallery image 4"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img
+            srcset="
+              img/gallery/gallery-5-800w.jpg   800w,
+              img/gallery/gallery-5-2000w.jpg 2000w
+            "
+            sizes="(max-width: 75em) 66vw, 2000px"
+            src="img/gallery/gallery-5-2000w.jpg"
+            alt="Gallery image 5"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img
+            srcset="
+              img/gallery/gallery-6-550w.jpg   550w,
+              img/gallery/gallery-6-1050w.jpg 1050w
+            "
+            sizes="(max-width: 96em) 35vw, 1050px"
+            src="img/gallery/gallery-6-1050w.jpg"
+            alt="Gallery image 6"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img
+            srcset="
+              img/gallery/gallery-7-700w.jpg   700w,
+              img/gallery/gallery-7-1550w.jpg 1550w
+            "
+            sizes="(max-width: 90em) 48vw, 1550px"
+            src="img/gallery/gallery-7-1550w.jpg"
+            alt="Gallery image 7"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img
+            srcset="
+              img/gallery/gallery-8-700w.jpg   700w,
+              img/gallery/gallery-8-1550w.jpg 1550w
+            "
+            sizes="(max-width: 90em) 48vw, 1550px"
+            src="img/gallery/gallery-8-1550w.jpg"
+            alt="Gallery image 8"
+            class="gallery__img"
+          />
+        </figure>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        <h3 class="heading-3 mb-t">Testimonials</h3>
+        <h2 class="heading-2 mb-lg-2">
+          See what some of our clients have to see
+        </h2>
+      </div>
+      <div class="testimonials container">
+        <figure class="testimonial">
+          <img
+            src="img/customers/customer-1.jpg"
+            alt="Customer 1"
+            class="testimonial__img"
+          />
+          <div class="testimonial__icons">
+            <svg class="testimonial__icon testimonial__icon--google">
+              <use xlink:href="img/sprite.svg#icon-google-with-circle"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <blockquote class="testimonial__text">
+            They have a great vegetarian menu and the atmosphere in the
+            restaurant is fantastic.
+          </blockquote>
+          <p class="testimonial__author">Iris Silva</p>
+        </figure>
+        <figure class="testimonial">
+          <img
+            src="img/customers/customer-2.jpg"
+            alt="Customer 2"
+            class="testimonial__img"
+          />
+          <div class="testimonial__icons">
+            <svg class="testimonial__icon testimonial__icon--google">
+              <use xlink:href="img/sprite.svg#icon-google-with-circle"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <blockquote class="testimonial__text">
+            I really enjoyed the new BBQ Patty Burger as well as the local pale
+            ale. Exellent!
+          </blockquote>
+          <p class="testimonial__author">Steve Brown</p>
+        </figure>
+        <figure class="testimonial">
+          <img
+            src="img/customers/customer-3.jpg"
+            alt="Customer 3"
+            class="testimonial__img"
+          />
+          <div class="testimonial__icons">
+            <svg class="testimonial__icon testimonial__icon--google">
+              <use xlink:href="img/sprite.svg#icon-google-with-circle"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <blockquote class="testimonial__text">
+            The food is tasty and prepared with love. Great location!
+          </blockquote>
+          <p class="testimonial__author">Eda Geis</p>
+        </figure>
+        <figure class="testimonial">
+          <img
+            src="img/customers/customer-4.jpg"
+            alt="Customer 4"
+            class="testimonial__img"
+          />
+          <div class="testimonial__icons">
+            <svg class="testimonial__icon testimonial__icon--google">
+              <use xlink:href="img/sprite.svg#icon-google-with-circle"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="testimonial__icon testimonial__icon--star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <blockquote class="testimonial__text">
+            Inexpensive, healthy and great-tasting burgers! It feels truly
+            magical.
+          </blockquote>
+          <p class="testimonial__author">Dave Bryson</p>
+        </figure>
+      </div>
+    </section>
+    <!-- MAP -->
+    <section class="section-map" id="map">
+      <div class="container center-text">
+        <h3 class="heading-3 mb-t">Map</h3>
+        <h2 class="heading-2 mb-hg">
+          Great location in the heart of Shoreditch
+        </h2>
+      </div>
+
+      <div class="map container">
+        <div class="map__google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.1699556672952!2d-0.08076384582581012!3d51.52532507914132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cba97ffdc1b%3A0xbf484d8aadc39f98!2s82%20Rivington%20St%2C%20London%20EC2A%203AZ%2C%20Regno%20Unito!5e0!3m2!1sit!2sde!4v1666269754176!5m2!1sit!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <address class="map__address">
+          <p class="map__address-name">Patty Buns</p>
+          <a class="address-link" href="https://goo.gl/maps/uGVmZf3XbkmhjBXE7">
+            <span> 82 Rivington St, London EC2A 3AZ, United Kingdom </span>
+          </a>
+        </address>
+      </div>
+    </section>
+
+    <footer class="section-footer" id="contact">
+      <div class="footer container">
+        <!-- FIRST FOOTER COLUMN -->
+        <div class="footer__logo-col">
+          <a href="#" class="footer__logo">
+            <img src="img/logo-white.png" alt="Patty buns white logo" />
+          </a>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://facebook.com" class="socials-link">
+                <svg class="footer__facebook">
+                  <use
+                    xlink:href="img/sprite.svg#icon-facebook-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" class="socials-link">
+                <svg class="footer__instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            &copy;
+            <span class="year">2022</span>
+            by Andrea "DDU" Puddu
+          </p>
+        </div>
+        <!-- SECOND FOOTER COLUMN -->
+        <div class="footer__subscribe-col">
+          <h4 class="footer__heading">Subscribe</h4>
+          <!-- FORM -->
+          <form
+            action="mailto:info@pattybuns.com?subject=Newsletter Registration&body=Thanks for your interest in Patty Buns newsletter! You can now send this email. We will send you a confirmation within 24 hours. Don't worry! You can unsubscribe anytime after receiving our first newsletter. Bye!"
+            method="post"
+            enctype="text/plain"
+            class="form"
+          >
+            <p class="form__text">
+              Register to join our mailing list and receive communications
+            </p>
+            <input
+              type="email"
+              name="Email address"
+              id="email"
+              class="form__input"
+              placeholder="Email address"
+              required
+            />
+            <label for="email" class="form__label">Email address</label>
+            <button type="submit" name="commit" class="form__btn">
+              &rarr;
+            </button>
+          </form>
+        </div>
+        <!-- THIRD FOOTER COLUMN -->
+        <div class="footer__contact-col">
+          <h4 class="footer__heading">Contact</h4>
+          <a href="mailto:info@pattybuns.com" class="footer__link">
+            <svg class="footer__email-icon">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <span> info@pattybuns.com </span>
+          </a>
+          <a href="tel:+44 20 7946 0513" class="footer__link">
+            <span class="footer__phone-icon">☎</span>
+            <span>+44 20 7946 0513</span>
+          </a>
+        </div>
+        <!-- 4th FOOTER COLUMN -->
+        <div class="footer__hours-col">
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__hour-list">
+            <li>
+              <span class="days"> Monday &dash; Thursday </span>
+              <p class="hours">3pm &dash; 11pm</p>
+            </li>
+            <li>
+              <span class="days"> Friday &dash; Sunday </span>
+              <p class="hours">11am &dash; 11pm</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

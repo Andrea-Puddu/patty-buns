@@ -1,0 +1,231 @@
+// HEADINGS
+.heading-1 {
+  font-size: 6.2rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  font-weight: 700;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 5.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 4.4rem;
+  }
+}
+
+.heading-2 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 700;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 3.6rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: $color-primary-dark;
+  font-weight: 700;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+// BUTTONS
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: $border-main;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.2rem 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1rem 1.8rem;
+  }
+
+  @media only screen and (max-width: $bp-mini) {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.btn {
+  &--full {
+    background-color: $color-primary;
+    color: $color-grey-dark-3;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-shade;
+      color: $color-primary-tint;
+      box-shadow: inset 0 0 0 2px $color-primary-tint;
+    }
+  }
+
+  &--outline {
+    background-color: $color-primary-tint;
+    color: $color-grey-dark-1;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: $color-primary-tint;
+      box-shadow: inset 0 0 0 2px $color-primary-tint;
+    }
+  }
+
+  &--outline-2 {
+    background-color: transparent;
+    color: $color-grey-dark-1;
+    box-shadow: inset 0 0 0 2px $color-primary-tint;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-tint;
+      color: $color-grey-dark-1;
+      box-shadow: inset 0 0 0 2px $color-primary-tint;
+    }
+  }
+
+  &--nav {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+// I use this style again becuase I was not able to apply a different padding to the buttons on the navigation
+.btn-nav,
+.btn-nav:link,
+.btn-nav:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: $border-main;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+.btn-nav {
+  &--full {
+    background-color: $color-primary;
+    color: $color-grey-dark-3;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-shade;
+      color: $color-primary-tint;
+      box-shadow: inset 0 0 0 2px $color-primary-tint;
+    }
+  }
+
+  &--outline {
+    background-color: $color-primary-tint;
+    color: $color-grey-dark-1;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: $color-primary-tint;
+      box-shadow: inset 0 0 0 2px $color-primary-tint;
+    }
+  }
+}
+
+// LINK STYLES
+.navigation__link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-grey-light-1;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-light;
+  }
+}
+
+.address-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-grey-dark-1;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-shade;
+  }
+}
+
+.socials-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    fill: $color-primary-tint;
+  }
+
+  &:hover,
+  &:active {
+    fill: $color-primary-light;
+  }
+}
+
+.footer__link {
+  &:link,
+  &:active {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-primary-tint;
+    fill: $color-primary-tint;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-light;
+    fill: $color-primary-light;
+  }
+}

@@ -1,0 +1,134 @@
+.section-menu {
+  padding: 9.6rem 0;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  &__box {
+    padding: 3.2rem;
+    border: 2px solid $color-primary-tint;
+    border-radius: $border-main;
+  }
+
+  &__header {
+    margin-bottom: 3.2rem;
+    padding-bottom: 2.4rem;
+    border-bottom: $border-container;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: $color-primary-dark;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: $color-grey-dark-2;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    row-gap: 0.8rem;
+  }
+
+  &__item-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__item-details {
+    font-size: 1.4rem;
+    color: $color-grey-dark-2;
+  }
+
+  &__item-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 2px;
+    grid-column: 2 / -1;
+    grid-row: 1 / span 2;
+  }
+}
+
+// MENU FEATURES
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4.8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+    justify-items: center;
+  }
+}
+
+.feature {
+  border: $border-container;
+  padding: 3.2rem 2rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  transition: all 0.4s;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-mini) {
+    width: 80%;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.17);
+  }
+
+  &__icon {
+    height: 3.2rem;
+    width: 3.2rem;
+    fill: $color-primary;
+    margin-bottom: 1.8rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}
