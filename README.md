@@ -1,6 +1,6 @@
 # Patty Buns - Restaurant landing page 
 
-[www.pattybuns-apuddu.netlify.app/](www.pattybuns-apuddu.netlify.app/)
+[https://pattybuns-apuddu.netlify.app/](https://pattybuns-apuddu.netlify.app/)
 
 ## Description
 The website is a fictitious restaurant webpage, designed and built to showcase my proficiency in HTML, Sass, and JavaScript. 
